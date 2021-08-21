@@ -15,28 +15,36 @@
         and know minimum number of notes to return.
     </p>
     <label for="bill-amount">Bill Amount</label>
-    <input id="bill-amount" type="text">
+    <input id="bill-amount" type="text" />
+    <button id="next-button">Next</button>
     <label for="cash-amount">Cash Amount</label>
-    <input type="text" id="cash-amount">
-    <button>Check</button>
+    <input type="text" id="cash-amount" />
+    <button id="check-button">Check</button>
+    <p id="error-message"></p>
     <table class="return-charge">
         <caption>Return Change</caption>
         <tr>
             <th>No. of Notes</th>
-            <td></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
         </tr>
         <tr>
             <th>Notes</th>
             <td>2000</td>
             <td>500</td>
             <td>100</td>
-            <td>20</td>
+            <td>50</td>
             <td>10</td>
             <td>5</td>
             <td>1</td>
         </tr>
     </table>
     </div>
-    <script src="/index.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>
