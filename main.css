@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     width: 50vw;
+    /* height:50vw; */
     background-color: darkgreen;
     align-items: center;
     margin:auto;
@@ -12,25 +13,34 @@
     border-color: black;
     height:1.5rem;
 }
-#next-button{
+/* #next-button{
     border-radius: 0.5rem;
     border-color: black;
     height:2rem;
     width: 5rem;
     margin: 0.5rem;
-}
+} */
+/* .cash-container{
+    display: flex;
+    display:table;    
+} */
+
 #cash-amount{
     margin:1px;
     border-radius: 0.5rem;
     border-color: black;
     height:1.5rem; 
+    /* display:list-item; */
+    /* margin:auto; */
 }
 #check-button{
     border-radius: 0.5rem;
     border-color: black;
     height:2rem;
     width: 5rem;
-    margin: 0.5rem;
+    margin:0.5rem;
+    /* margin: auto; */
+    /* display:inline-block; */
 }
 table {
     border-collapse: collapse;
