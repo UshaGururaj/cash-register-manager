@@ -7,46 +7,92 @@
     <title>cash register</title>
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
-    <div class="container">
-        <h1 class="header">Cash Register Manager</h1>
-        <p class="description">
-        Enter the bill amount and cash given by the customer 
-        and know minimum number of notes to return.
-        </p>
-        <label for="bill-amount">Bill Amount</label>
+
+    <nav class="navigation ">
+        <div class="nav-brand">cashregister</div>
+    </nav>
+
+    <h1>Cash Register Manager</h1>
+    <p>Enter the bill amount and cash given by the customer and know
+        minimum number of notes to return.</p>
+        <div class="container container-center">
+    <div class="container-center">
+        <h3>Bill Amount</h3>
         <input id="bill-amount" type="number" />
-        <!-- <button id="next-button">Next</button> -->
-        <!-- <div id="cash-part" class="cash-container"> -->
-            <label for="cash-amount">Cash Amount</label>
-            <input type="number" id="cash-amount" />
-            <button id="check-button">Check</button>
-            <p id="error-message"></p>
-            <table class="return-charge">
-                <caption>Return Change</caption>
-                <tr>
-                    <th>No. of Notes</th>
-                    <td class="no-of-notes"></td>
-                    <td class="no-of-notes"></td>
-                    <td class="no-of-notes"></td>
-                    <td class="no-of-notes"></td>
-                    <td class="no-of-notes"></td>
-                    <td class="no-of-notes"></td>
-                    <td class="no-of-notes"></td>
-                </tr>
-                <tr>
-                    <th>Notes</th>
-                    <td>2000</td>
-                    <td>500</td>
-                    <td>100</td>
-                    <td>20</td>
-                    <td>10</td>
-                    <td>5</td>
-                    <td>1</td>
-                </tr>
-            </table>
-        <!-- </div> -->
+        <button id="next-button">Next</button>
     </div>
+
+    <div class="container-center" id="hide" style="display: none;">
+        <h3>Cash Given</h3>
+        <input id="cash-amount" type="number" />
+        <button id="check-button">Calculate</button>
+    </div>
+    
+    <div class="container-center">
+        <div id="error-message"></div>
+        <h3>Return Change</h3>
+        <table class="return-charge">
+            <!-- <caption>Return Change</caption> -->
+            <tr>
+                <th>No. of Notes</th>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+            </tr>
+            <tr>
+                <th>Note</th>
+                <td>2000</td>
+                <td>500</td>
+                <td>100</td>
+                <td>20</td>
+                <td>10</td>
+                <td>5</td>
+                <td>1</td>
+            </tr>
+        </table>
+    </div>
+</div>
+    
+    <footer class="footer">
+        <!-- <p>©  |  2021  |  Usha BG</p> -->
+        <!-- <p>get in touch</p> -->
+        <div class="footer-header" style="margin-bottom:2rem">Get in touch</div>
+        <!-- <ul class="list-unordered inline-list"> -->
+          <ul class="list-non-bullet" style="margin-bottom:2rem">
+          <li class="list-item-inline">
+            <a class="links" href="https://www.linkedin.com/in/usha-bg-002734192" target="blank">
+              <img src="images/linkedin.svg" alt="linkedin" class="footer-icon" />
+            </a>
+          </li>
+          <li class="list-item-inline">
+            <a class="links" href="https://github.com/UshaGururaj" target="blank">
+              <img src="images/git.svg" alt="github" class="footer-icon"/>
+            </a>
+          </li>
+          <li class="list-item-inline">
+            <a class="links" href="https://twitter.com/UshaBG1" target="blank">
+              <img src="images/tweet.svg" alt="twitter" class="footer-icon"/>
+            </a>
+          </li>
+          <li class="list-item-inline">
+            <a
+              class="links"
+              href="https://instagram.com/usha_g_raj"
+              target="blank"
+            >
+              <img src="images/insta.svg" alt="instagram" class="footer-icon"/>
+            </a>
+          </li>
+        </ul>
+    </footer>
+</div>
+
     <script src="./index.js"></script>
 </body>
 </html>
